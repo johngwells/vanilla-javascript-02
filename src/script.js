@@ -1,3 +1,5 @@
+import './style.css';
+
 const count = 10;
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${process.env.UNSPLASH_API_KEY}&count=${count}`;
 

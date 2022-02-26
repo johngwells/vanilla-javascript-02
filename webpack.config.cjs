@@ -1,9 +1,10 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const path = require('path');
 
 module.exports = {
-  entry: './src/script.js',
+  entry: '/src/script.js',
   output: {
     filename: 'bundle.js'
   },

@@ -6,7 +6,7 @@ const path = require('path/posix');
 module.exports = {
   entry: './src/script.js',
   output: {
-    path: path.resolve('./public'),
+    path: path.resolve(__dirname, './public'),
     filename: 'bundle.js',
   },
   mode: 'production',

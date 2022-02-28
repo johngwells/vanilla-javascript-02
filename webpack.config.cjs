@@ -3,10 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  entry: '/src/script.js',
+  entry: './src/script.js',
   output: {
     filename: 'bundle.js'
   },
+  mode: 'production',
   module: {
     rules: [
       { test: /\.js?$/, use: 'babel-loader', exclude: /node_modules/ },
@@ -28,9 +29,5 @@ module.exports = {
       inject: 'body'
     }),
     new Dotenv()
-  ]
-};
-
-module.exports = {
-  mode: 'development'
+  ],
 };

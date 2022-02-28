@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.17.0",
+    "html-webpack-inline-svg-plugin": "^2.3.0",
     "html-webpack-plugin": "^5.5.0"
   }
 }

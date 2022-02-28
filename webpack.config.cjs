@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
-const path = require('path/posix');
+const path = require('path-posix');
 
 module.exports = {
   entry: './src/script.js',

@@ -1,11 +1,13 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const path = require('path/posix');
 
 module.exports = {
   entry: './src/script.js',
   output: {
-    filename: 'bundle.js'
+    path: path.resolve('./public'),
+    filename: 'bundle.js',
   },
   mode: 'production',
   module: {

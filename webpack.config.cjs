@@ -10,15 +10,15 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js?$/, use: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] }
     ]
   },
   devServer: {
     static: {
-      directory: 'src',
+      directory: 'src'
     },
     hot: true,
-    port: 8000,
+    port: 8000
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -27,6 +27,10 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     }),
-    new Dotenv
+    new Dotenv()
   ]
+};
+
+module.exports = {
+  mode: 'development'
 };
